@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDU INDIA FOUNDATION</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+  <link rel="stylesheet" href="stylesheet.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Edu India Foundation Logo" class="logo" />
+    <h1>EDU INDIA FOUNDATION</h1>
+    <p class="tagline">Shaping Futures, Guiding Success</p>
+  </header>
+
+  <nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="counselling.html">Services</a></li>
+      <li><a href="colleges.html">Medical Colleges and Fees</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero hidden">
+    <h2>Your Dream College Awaits</h2>
+    <p>We guide students across all fields with personalized counselling and expert mentorship.</p>
+    <a href="counselling.html" class="btn">Explore Services</a>
+  </section>
+
+  <section class="services hidden">
+    <h2>Our Expertise</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>JEE & NEET Counselling</h3>
+        <p>End-to-end guidance for All India and State-level admission procedures.</p>
+      </div>
+      <div class="card">
+        <h3>Career Guidance</h3>
+        <p>Helping students discover the right path based on their interests and strengths.</p>
+      </div>
+      <div class="card">
+        <h3>UG/PG Admissions</h3>
+        <p>Support for admission into undergraduate and postgraduate programs across streams.</p>
+      </div>
+      <div class="card">
+        <h3>Study Abroad</h3>
+        <p>University selection, applications, SOPs, visa processing, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Scholarships & Loans</h3>
+        <p>We assist students in applying for scholarships and guide them on educational loans.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose hidden">
+    <h2>Why Choose Edu India Foundation?</h2>
+    <div class="reason-cards">
+      <div class="reason-card">
+        <h3> 10+ Years of Experience</h3>
+        <p>Partnered with over 100 premier institutions across India.</p>
+      </div>
+      <div class="reason-card">
+        <h3> Expert Counsellors</h3>
+        <p>Experienced professionals offering tailored guidance for every student.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Transparent Process</h3>
+        <p>No hidden charges. Clear, ethical, and student-first approach.</p>
+      </div>
+      <div class="reason-card">
+        <h3>End-to-End Support</h3>
+        <p>From application to admission, we’re with you at every step.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Proven Success</h3>
+        <p>Thousands of students placed in top colleges across India and abroad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners hidden">
+    <h2>Partnered with 100+ Premier Institutions Across India!</h2>
+    <div class="logos">
+      <img src="srm.jpg" alt="SRM Logo" />
+      <img src="brambed.jpg" alt="BR Ambedkar Logo" />
+      <img src="himslogo.jpg" alt="HIMS Logo" />
+      <img src="jss.jpg" alt="JSS logo"/>
+      <img src="kmc.jpg" alt="KMC logo"/>
+      <img src="oxford.jpg" alt="Oxford logo"/>
+      <img src="sapthagiri.jpg" alt="Sapthagiri logo"/>
+      <img src="saveetha.jpg" alt="Saveetha Medical College logo"/>
+      <img src="sharda.jpg" alt="Sharda Medical College"/>
+      <img src="srm.jpg" alt="SRM Logo"/>
+      <img src="srmslogo.jpg" alt="SRMS logo"/>
+      <img src="zoram.jpg" alt="Zoram Medical College logo"/>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EDU INDIA FOUNDATION. All rights reserved.</p>
+  </footer>
+
+  <a href="#" class="scroll-top">↑</a>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const hiddenEls = document.querySelectorAll(".hidden");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      });
+
+      hiddenEls.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
