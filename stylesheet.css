@@ -373,3 +373,18 @@ body.fade-in {
   height: 24px;
   margin-right: 10px;
 }
+@media (max-width: 600px) {
+  .instagram-btn,
+  .youtube-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .instagram-icon,
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+}
+
