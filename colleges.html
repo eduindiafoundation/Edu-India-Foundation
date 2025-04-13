@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+    <!-- SEO Meta Tags -->
+    <title>Top Private Medical Colleges in India | EDU INDIA FOUNDATION</title>
+    <meta name="description" content="Explore a comprehensive list of private medical colleges in India including college names, locations, and fees.">
+    <meta name="keywords" content="top medical colleges in India, private MBBS colleges, MBBS admission consultants, NEET counselling Assam, medical college fees, EDU INDIA FOUNDATION, SRM University consultant in Assam, top education consultant in Guwahati Assam, medical consultant in Guwahati">
+    <meta name="author" content="EDU INDIA FOUNDATION">
+    <meta name="robots" content="index, follow">
+  
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Top Private Medical Colleges in India | EDU INDIA FOUNDATION">
+    <meta property="og:description" content="Get detailed information about private medical colleges across India, powered by EDU INDIA FOUNDATION.">
+    <meta property="og:image" content="https://eduindiafoundation.com/images/banner.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eduindiafoundation.com/colleges.html">
+  
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Top Private Medical Colleges in India | EDU INDIA FOUNDATION">
+    <meta name="twitter:description" content="Get detailed information about private medical colleges across India, powered by EDU INDIA FOUNDATION.">
+    <meta name="twitter:image" content="https://eduindiafoundation.com/images/banner.jpg">
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://eduindiafoundation.com/colleges.html" />
+  
+    <!-- Favicon -->
+    <link rel="icon" href="logo.jpg" type="image/jpg" />
+  
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+  
+    <!-- Structured Data: Organization + Breadcrumb -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Edu India Foundation",
+      "url": "https://eduindiafoundation.com",
+      "logo": "https://eduindiafoundation.com/images/logo.png",
+      "description": "Edu India Foundation is a trusted MBBS admission and counselling consultancy offering guidance for private medical colleges across India.",
+      "sameAs": [
+        "https://www.instagram.com/eduindia_foundation",
+        "https://www.youtube.com/@EDUINDIAAXOM"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-7002086090",
+        "contactType": "Customer Support",
+        "areaServed": "IN",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Guwahati",
+        "addressRegion": "Assam",
+        "postalCode": "781001",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eduindiafoundation.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Counselling",
+          "item": "https://eduindiafoundation.com/counselling.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Colleges",
+          "item": "https://eduindiafoundation.com/colleges.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://eduindiafoundation.com/contact.html"
+        }
+      ]
+    }
+    </script>
+  </head>
+  
+<body>
+  <header>
+    <img src="logo.jpg" alt="Edu India Foundation Logo" class="logo" />
+    <h1>EDU INDIA FOUNDATION</h1>
+    <p class="tagline">Shaping Futures, Guiding Success</p>
+  </header>
+
+  <nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="counselling.html">Services</a></li>
+      <li><a href="colleges.html">Medical Colleges & Fees</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="filters">
+    <input type="text" id="searchBar" placeholder="Search by college name..." />
+    <select id="stateFilter">
+      <option value="">All States</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="West Bengal">West Bengal</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="North East">North East</option>
+      <option value="Pondicherry">Pondicherry</option>
+    </select>
+    
+    
+  </div>
+
+  <main id="collegesContainer">
+    <!-- Cards will be injected here -->
+  </main>
+
+  <a href="#" class="scroll-top">↑</a>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const colleges = [
+  {name:"United Institute of Medical Sciences",location:"Prayagraj",fees:"₹11,90,401",state:"Uttar Pradesh"},
+  {name:"Sri Rammurti Smarak Institute of Medical Sciences",location:"Bareilly",fees:"₹13,73,760",state:"Uttar Pradesh"},
+  {name:"Heritage Institute of Medical Sciences",location:"Varanasi",fees:"₹13,21,492",state:"Uttar Pradesh"},
+  {name:"Rama Medical College Hospital & Research Centre",location:"Hapur",fees:"₹13,09,968",state:"Uttar Pradesh"},
+  {name:"Rama Medical College Hospital & Research Centre",location:"Kanpur",fees:"₹12,66,579",state:"Uttar Pradesh"},
+  {name:"Rohilkhand Medical College & Hospital",location:"Bareilly",fees:"₹13,00,251",state:"Uttar Pradesh"},
+  {name:"T.S. Mishra Medical College & Hospital",location:"Lucknow",fees:"₹12,99,199",state:"Uttar Pradesh"},
+  {name:"Muzaffarnagar Medical College",location:"Muzaffarnagar",fees:"₹12,80,037",state:"Uttar Pradesh"},
+  {name:"School of Medical Sciences, Sharda University",location:"Greater Noida",fees:"₹12,69,319",state:"Uttar Pradesh"},
+  {name:"Rajshree Medical Research Institute",location:"Bareilly",fees:"₹12,28,406",state:"Uttar Pradesh"},
+  {name:"K.D. Medical College Hospital & Research Centre",location:"Mathura",fees:"₹12,28,240",state:"Uttar Pradesh"},
+  {name:"National Capital Region Institute of Medical Sciences",location:"Meerut",fees:"₹12,19,917",state:"Uttar Pradesh"},
+  {name:"Varunarjun Medical College & Rohilkhand Hospital",location:"Sahjahanpur",fees:"₹12,10,000",state:"Uttar Pradesh"},
+  {name:"Noida International Institute of Medical Sciences",location:"Gautam B Nagar",fees:"₹11,92,211",state:"Uttar Pradesh"},
+  {name:"Subharti Medical College",location:"Meerut",fees:"₹11,85,133",state:"Uttar Pradesh"},
+  {name:"Saraswati Institute of Medical Sciences",location:"Hapur",fees:"₹11,81,671",state:"Uttar Pradesh"},
+  {name:"G S Medical College and Hospital",location:"Hapur",fees:"₹11,78,892",state:"Uttar Pradesh"},
+  {name:"Krishan Mohan Medical College & Hospital",location:"Mathura",fees:"₹11,73,856",state:"Uttar Pradesh"},
+  {name:"Hind Institute of Medical Sciences",location:"Barabanki",fees:"₹11,70,612",state:"Uttar Pradesh"},
+  {name:"Saraswati Medical College Sciences",location:"Unnao",fees:"₹11,59,610",state:"Uttar Pradesh"},
+  {name:"Mayo Institute of Medical",location:"Barabanki",fees:"₹11,21,162",state:"Uttar Pradesh"},
+  {name:"Shri Venkateshwar Institute of Medical Sciences",location:"Amroha",fees:"₹11,10,508",state:"Uttar Pradesh"},
+  {name:"Prasad Institute of Medical Sciences",location:"Lucknow",fees:"₹11,03,932",state:"Uttar Pradesh"},
+  {name:"Hind Institute of Medical Sciences",location:"Lucknow",fees:"₹10,77,229",state:"Uttar Pradesh"},
+  {name:"Himalayan Institute of Medical Sciences",location:"Uttarakhand",fees:"₹18,00,000",state:"Uttarakhand"},
+  {name:"United Institute of Medical Sciences",location:"Uttarakhand",fees:"₹18,00,000",state:"Uttarakhand"},
+  {name:"Sri Siddhartha Medical College",location:"Tumkur",fees:"₹15,65,750",state:"Karnataka"},
+  {name:"K.S. Hegde Medical Academy",location:"Mangalore",fees:"₹15,35,000",state:"Karnataka"},
+  {name:"Raja Rajeshwari Medical College",location:"Bangalore",fees:"₹24,00,000",state:"Karnataka"},
+  {name:"Jawaharlal Nehru Medical College",location:"Belgaum",fees:"₹18,28,800",state:"Karnataka"},
+  {name:"Adichunchanagiri Institute of Medical Science",location:"Mandaya",fees:"₹18,15,500",state:"Karnataka"},
+  {name:"SDM College of Medical Science and Hospital",location:"Dharwad",fees:"₹17,45,200",state:"Karnataka"},
+  {name:"Shri B M Patil Medical College, Hospital & Research Centre",location:"Bijapur",fees:"₹17,00,000",state:"Karnataka"},
+  {name:"Khaja Banda Nawaz Institute of Medical Science",location:"Gulbarga",fees:"₹16,30,465",state:"Karnataka"},
+  {name:"Sri Siddhartha Medical College",location:"Tumkur",fees:"₹15,65,750",state:"Karnataka"},
+  {name:"JSS Medical College",location:"Mysore",fees:"₹14,75,000",state:"Karnataka"},
+  {name:"Kasturba Medical College",location:"Manipal",fees:"₹14,50,000",state:"Karnataka"},
+  {name:"Sri Devaraj Urs Medical College",location:"Kolar",fees:"₹14,50,000",state:"Karnataka"},
+  {name:"Shri Basaveswara Medical College and Hospital",location:"Chitradurga",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"S. N. Medical College & HSK Hospital & Research",location:"Bagalkot",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"Dr. BR Ambedkar Medical College",location:"Bangalore",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"Mahadevappa Rampure Medical College",location:"Gulbarga",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"JJM Medical College",location:"Davangere",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"MS Ramaiah Medical College",location:"Bangalore",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"SS Institute of Medical Science & Research Centre",location:"Davangere",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"BGS Global Institute of Medical Science",location:"Bangalore",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"Shridevi Institute of Medical Science & Research Hospital",location:"Tumkur",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"MVJ Medical College and Research Hospital",location:"Bangalore",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"AJ Institute of Medical Science & Research Center",location:"Mangalore",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"Vydehi Institute of Medical Science & Research Centre",location:"Bangalore",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"Sapthagiri Institute of Medical Science & Research Center",location:"Bangalore",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"Srinivas Institute of Medical Research Center",location:"Mangalore",fees:"₹9,94,406",state:"Karnataka"},
+  {name:"St. Johns Medical College",location:"Bangalore",fees:"₹49,94,406",state:"Karnataka"},
+  {name:"The Oxford Medical College, Hospital & Research",location:"Bangalore",fees:"₹6,28,670",state:"Karnataka"},
+   // Tamil Nadu colleges
+  {name: "Saveetha Medical College and Hospital", location: "Kanchipuram", fees: "₹24,75,000", state: "Tamil Nadu"},
+  {name: "Sree Balaji Medical College and Hospital", location: "Chennai", fees: "₹24,75,000", state: "Tamil Nadu"},
+  {name: "Chettinad Hospital and Research Institute", location: "Kanchipuram", fees: "₹24,50,000", state: "Tamil Nadu"},
+  {name: "Sri Ramachandra Medical College and Research Institute", location: "Chennai", fees: "₹25,00,000", state: "Tamil Nadu"},
+  {name: "ACS Medical College and Hospital", location: "Chennai", fees: "₹23,00,000", state: "Tamil Nadu"},
+  {name: "SRM Medical College Hospital and Research Centre", location: "Kanchipuram", fees: "₹25,00,000", state: "Tamil Nadu"},
+  {name: "Meenakshi Medical College and Research Institute", location: "Enathur", fees: "₹22,50,000", state: "Tamil Nadu"},
+  {name: "Vinayaka Mission Kirupananda Varlyar Medical College", location: "Salem", fees: "₹20,00,000", state: "Tamil Nadu"},
+  {name: "Shri Sathya Sai Medical College and Research Institute", location: "Kanchipuram", fees: "₹20,00,000", state: "Tamil Nadu"},
+  {name: "Annaii Medical College (Rajalakshmi Medical College)", location: "Kanchipuram", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Annapoorna Medical College and Hospital", location: "Salem", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Chennai Medical College Hospital and Research Centre", location: "Trichy", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Christian Medical College", location: "Vellore", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Dhanalakshmi Srinivasan Medical College and Hospital", location: "Parambalur", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Karpaga Vinayaga Institute of Medical Science", location: "Maduranthagam", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Karpagam Faculty of Medical Science & Research", location: "Coimbatore", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Madha Medical College and Hospital", location: "Thandalam", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Melmaruvathur Adiparasakthi Institute", location: "Kanchipuram", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Ponnaiyah Ramajayam Institute of Medical Science", location: "Manamai-Nellur", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "PSG Institute of Medical Science", location: "Coimbatore", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Sree Moogambika Institute of Medical Science", location: "Kanyakumari", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Sri Muthukumaran Medical College", location: "Chennai", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Tagore Medical College", location: "Chennai", fees: "₹12,50,000", state: "Tamil Nadu"},
+  {name: "Velammal Medical College Hospital & Research Institute", location: "Madurai", fees: "₹12,50,000", state: "Tamil Nadu"},
+  // Maharashtra colleges
+  {name: "Padmashree Dr. D.Y. Patil Medical College", location: "Navi Mumbai", fees: "₹25,75,000", state: "Maharashtra"},
+  {name: "Padmashree Dr. D.Y. Patil Medical College", location: "Pune", fees: "₹25,00,000", state: "Maharashtra"},
+  {name: "Padmashree Dr. D.Y. Patil Medical College", location: "Kolhapur", fees: "₹20,60,000", state: "Maharashtra"},
+  {name: "Krishna Institute of Medical Sciences", location: "Karad", fees: "₹20,87,000", state: "Maharashtra"},
+  {name: "Jawaharlal Nehru Medical College (Meghe Datta)", location: "Wardha", fees: "₹20,50,000", state: "Maharashtra"},
+  {name: "Mahatma Gandhi Missions Medical College", location: "Aurangabad", fees: "₹20,00,000", state: "Maharashtra"},
+  {name: "Mahatma Gandhi Missions Medical College", location: "Navi Mumbai", fees: "₹20,00,000", state: "Maharashtra"},
+  {name: "Bharati Vidyapeeth University Medical College & Hospital", location: "Sangli", fees: "₹19,98,150", state: "Maharashtra"},
+  {name: "Bharati Vidyapeeth University Medical College & Hospital", location: "Pune", fees: "₹19,35,515", state: "Maharashtra"},
+  {name: "Rural Medical College (PLIMS)", location: "Loni", fees: "₹14,50,000", state: "Maharashtra"},
+  {name: "B.K.L Walawalkar Rural Medical College", location: "Ratnagiri", fees: "₹10,25,000", state: "Maharashtra"},
+  {name: "Maharashtra Institute of Medical Education & Research", location: "Pune", fees: "₹9,25,000", state: "Maharashtra"},
+  {name: "N. K. P. Salve Institute of Medical Sciences and Research Centre", location: "Nagpur", fees: "₹8,83,000", state: "Maharashtra"},
+  {name: "Dr. Vithalrao Vikhe Patil Foundations Medical College", location: "Ahmed Nagar", fees: "₹8,15,000", state: "Maharashtra"},
+  {name: "Institute of Medical Science and Research", location: "Satara", fees: "₹7,10,000", state: "Maharashtra"},
+  {name: "Maharashtra Institute of Medical Sciences & Research", location: "Latur", fees: "₹7,00,000", state: "Maharashtra"},
+  {name: "Terna Medical College", location: "Navi Mumbai", fees: "₹7,00,000", state: "Maharashtra"},
+  {name: "Dr. Ulhas Patil Medical College & Hospital", location: "Jalgaon", fees: "₹5,13,637", state: "Maharashtra"},
+  {name: "SMBT Institute of Medical Sciences Research Centre", location: "Nashik", fees: "₹2,95,454", state: "Maharashtra"},
+  // West Bengal colleges
+  {name: "KPC Medical College & Hospital", location: "Kolkata", fees: "₹12,00,000", state: "West Bengal"},
+  {name: "IQ City Medical College", location: "Burdwan", fees: "₹18,50,000", state: "West Bengal"},
+  {name: "Sanaka Medical College", location: "Durgapur", fees: "₹21,88,000", state: "West Bengal"},
+  {name: "Gouri Devi Medical College", location: "Durgapur", fees: "₹10,75,000", state: "West Bengal"},
+  {name: "Sri Ramkrishna Institute of Medical Science", location: "Durgapur", fees: "₹21,88,000", state: "West Bengal"},
+  {name: "Jagannath Gupta Medical College", location: "Kolkata", fees: "₹22,00,000", state: "West Bengal"},
+  {name: "ICARE Institute of Medical College", location: "Midanpur", fees: "₹16,30,000", state: "West Bengal"},
+  // Madhya Pradesh colleges
+  {name: "LN Medical College", location: "Bhopal", fees: "₹12,75,000", state: "Madhya Pradesh"},
+  {name: "Index Medical College", location: "Indore", fees: "₹12,25,700", state: "Madhya Pradesh"},
+  {name: "People's College of Medical Science", location: "Bhopal", fees: "₹12,15,000", state: "Madhya Pradesh"},
+  {name: "Chirayu Medical College", location: "Bhopal", fees: "₹11,41,000", state: "Madhya Pradesh"},
+  {name: "Amaltas Medical College", location: "Ujjain", fees: "₹9,65,000", state: "Madhya Pradesh"},
+  {name: "Sri Aurobindo Institute of Medical Science", location: "Indore", fees: "₹9,28,000", state: "Madhya Pradesh"},
+  {name: "RD Gardi Medical College", location: "Ujjain", fees: "₹8,33,000", state: "Madhya Pradesh"},
+  // Pondicherry colleges
+  {name: "Mahatma Gandhi Medical & Research Institute", location: "Pondicherry", fees: "₹22,00,000", state: "Pondicherry"},
+  {name: "Aarupadai Veedu Medical College", location: "Pondicherry", fees: "₹19,50,000", state: "Pondicherry"},
+  {name: "Sri Lakshmi Narayana Institute of Medical Science", location: "Pondicherry", fees: "₹21,50,000", state: "Pondicherry"},
+  {name: "Vinayaka Mission Medical College", location: "", fees: "₹20,00,000", state: "Pondicherry"},
+  {name: "Sri Manakula Vinayagar Medical College & Hospital", location: "Pondicherry", fees: "₹18,00,000", state: "Pondicherry"},
+  {name: "Sri Venkateswaraa Medical College, Hospital & Research", location: "Pondicherry", fees: "₹18,00,000", state: "Pondicherry"},
+  {name: "Pondicherry Institute of Medical Science & Research", location: "Pondicherry", fees: "₹8,33,000", state: "Pondicherry"},
+  // North East colleges
+  {name: "Sikkim Manipal Institute of Medical Sciences", location: "Sikkim", fees: "₹17,20,000", state: "North East"},
+  {name: "Zoram Medical College (NRI Quota)", location: "", fees: "$20,000", state: "North East"},
+  {name: "Shija Academy of Health Sciences", location: "Manipur", fees: "₹19,00,000", state: "North East"},
+
+];
+
+    const container = document.getElementById('collegesContainer');
+    const searchBar = document.getElementById('searchBar');
+    const stateFilter = document.getElementById('stateFilter');
+
+    function renderColleges() {
+      container.innerHTML = '';
+      const search = searchBar.value.toLowerCase();
+      const state = stateFilter.value;
+
+      colleges.filter(college => {
+        const matchName = college.name.toLowerCase().includes(search);
+        const matchState = state === '' || college.state === state;
+        return matchName && matchState;
+      }).forEach(college => {
+        container.innerHTML += `
+          <div class="college-card" data-aos="fade-up">
+            <h2>${college.name}</h2>
+            <p><strong>Location:</strong> ${college.location}</p>
+            <p><strong>Annual Fees:</strong> ${college.fees}</p>
+            <p><strong>State:</strong> ${college.state}</p>
+          </div>
+        `;
+      });
+      AOS.refresh();
+    }
+
+    searchBar.addEventListener('input', renderColleges);
+    stateFilter.addEventListener('change', renderColleges);
+    window.onload = renderColleges;
+  </script>
+</body>
+</html>
