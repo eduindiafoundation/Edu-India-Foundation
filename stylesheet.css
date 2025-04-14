@@ -563,4 +563,79 @@ header {
     padding-top: 5rem; /* Add space so text doesn't overlap logo */
   }
 }
+/* Brochure Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none; /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 10px;
+}
+
+.popup-content {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 600px;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ff4444;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .popup-content {
+    max-width: 95%;
+    width: 95%;
+    max-height: 80vh;
+  }
+
+  .close-btn {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+}
 
