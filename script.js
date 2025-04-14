@@ -28,3 +28,21 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+window.addEventListener("load", () => {
+  const popup = document.getElementById("brochure-popup");
+
+  // Check if the popup has already been shown in this session
+  const hasSeenPopup = sessionStorage.getItem("hasSeenPopup");
+
+  if (!hasSeenPopup && popup) {
+    popup.style.display = "flex";
+    sessionStorage.setItem("hasSeenPopup", "true");
+  }
+});
+
+function closePopup() {
+  const popup = document.getElementById("brochure-popup");
+  if (popup) {
+    popup.style.display = "none";
+  }
+}
