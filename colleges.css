@@ -1,0 +1,172 @@
+/* Colleges Page Overrides & Additions */
+
+/* HERO */
+.page-hero.colleges-hero {
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(0,65,106,.95), rgba(0,115,177,.75)),
+              url('images/medical-hero.jpg') center/cover no-repeat;
+}
+.page-hero.colleges-hero .page-hero-content {
+  max-width: 900px;
+  margin: auto;
+}
+.page-hero.colleges-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 16px;
+}
+.page-hero.colleges-hero p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* FILTERS */
+.college-filters {
+  background: #ffffff;
+  padding: 50px 20px 40px;
+  text-align: center;
+}
+.filters-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  align-items: end;
+}
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+.filter-field.filter-small { justify-content: flex-end; }
+.filter-field label {
+  font-size: 0.85rem;
+  color: #555;
+}
+.filter-field input[type="text"],
+.filter-field input[type="number"],
+.filter-field select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+.checkbox-label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.95rem;
+  user-select: none;
+}
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / -1;
+  margin-top: 10px;
+}
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #00416A;
+  background: #fff;
+  color: #00416A;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+.btn-secondary:hover { background: #e5f1ff; }
+
+.results-count {
+  margin-top: 24px;
+  font-size: 1rem;
+  color: #00416A;
+}
+.fee-note {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* RESULTS GRID */
+.college-results {
+  background: linear-gradient(to right, #f7fbff, #f3f4f8);
+  padding: 70px 20px;
+}
+.colleges-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.college-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+.college-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.college-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+.college-card h2 {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #003366;
+  margin-bottom: 10px;
+}
+.college-card p {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: #555;
+  margin-bottom: 2px;
+}
+.college-card .fee-high { color: #c62828; font-weight: 600; }
+.college-card .fee-mid  { color: #f57c00; font-weight: 600; }
+.college-card .fee-low  { color: #2e7d32; font-weight: 600; }
+.college-card .fee-unknown { color: #777; font-style: italic; }
+
+/* CTA */
+.college-cta {
+  background: linear-gradient(135deg, #00416A, #0073b1);
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+.college-cta h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 16px;
+}
+.college-cta p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page-hero.colleges-hero h1 { font-size: 2rem; }
+  .filters-wrapper { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+  .college-card h2 { font-size: 1.05rem; }
+}
+@media (max-width: 480px) {
+  .filters-wrapper { grid-template-columns: 1fr 1fr; }
+  .filter-buttons { flex-direction: column; }
+  .page-hero.colleges-hero { padding: 100px 16px; }
+  .page-hero.colleges-hero p { font-size: 0.9rem; }
+}
