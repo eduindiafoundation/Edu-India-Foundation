@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Top Private Medical Colleges in India | Edu India Foundation</title>
+  <meta name="description" content="Browse private medical colleges across India. Compare locations, annual MBBS fees, and filter by state and budget. Updated list from Edu India Foundation." />
+  <meta name="keywords" content="top medical colleges in India, private MBBS colleges, MBBS admission consultants, medical college fees, Edu India Foundation, NEET counselling, MBBS admission help" />
+  <meta name="author" content="Edu India Foundation" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Top Private Medical Colleges in India | Edu India Foundation" />
+  <meta property="og:description" content="Compare private MBBS colleges across India. Fees, locations & counselling help from Edu India Foundation." />
+  <meta property="og:image" content="https://eduindiafoundation.com/images/banner.jpg" />
+  <meta property="og:url" content="https://eduindiafoundation.com/colleges.html" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Top Private Medical Colleges in India | Edu India Foundation" />
+  <meta name="twitter:description" content="Compare private MBBS colleges across India with fees & counselling help." />
+  <meta name="twitter:image" content="https://eduindiafoundation.com/images/banner.jpg" />
+
+  <link rel="canonical" href="https://eduindiafoundation.com/colleges.html" />
+  <link rel="icon" href="favicon.png" type="image/jpeg" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="colleges.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Edu India Foundation",
+    "url": "https://eduindiafoundation.com",
+    "logo": "https://eduindiafoundation.com/images/logo.png",
+    "description": "Edu India Foundation is a trusted MBBS admission and counselling consultancy offering guidance for private medical colleges across India.",
+    "sameAs": [
+      "https://www.instagram.com/eduindia_foundation",
+      "https://www.youtube.com/@EDUINDIAAXOM"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-7002086090",
+      "contactType": "Customer Support",
+      "areaServed": "IN",
+      "availableLanguage": "English"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Guwahati",
+      "addressRegion": "Assam",
+      "postalCode": "781001",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div id="loader"><div class="loader-circle"></div></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">Edu India Foundation</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Toggle navigation menu">&#9776;</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="colleges.html">Medical Colleges & Fees</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero colleges-hero">
+    <div class="page-hero-content">
+      <h1>Medical Colleges & Fees (Private MBBS)</h1>
+      <p>Use filters below to find colleges by state, budget, and location. For full counselling support, connect with us.</p>
+    </div>
+  </section>
+
+  <!-- FILTER PANEL -->
+  <section class="college-filters">
+    <div class="filters-wrapper">
+      <div class="filter-field">
+        <label for="searchInput">Search</label>
+        <input type="text" id="searchInput" placeholder="College name or location..." />
+      </div>
+
+      <div class="filter-field">
+        <label for="stateSelect">State</label>
+        <select id="stateSelect">
+          <option value="">All States</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label for="minFee">Min Fee (₹)</label>
+        <input type="number" id="minFee" min="0" placeholder="e.g. 500000" />
+      </div>
+
+      <div class="filter-field">
+        <label for="maxFee">Max Fee (₹)</label>
+        <input type="number" id="maxFee" min="0" placeholder="e.g. 2500000" />
+      </div>
+
+      <div class="filter-field filter-small">
+        <label class="checkbox-label">
+          <input type="checkbox" id="hideUnknown" />
+          Hide unknown fees
+        </label>
+      </div>
+
+      <div class="filter-field">
+        <label for="sortSelect">Sort</label>
+        <select id="sortSelect">
+          <option value="none">None</option>
+          <option value="fee-asc">Fee: Low → High</option>
+          <option value="fee-desc">Fee: High → Low</option>
+          <option value="name-asc">Name: A → Z</option>
+          <option value="name-desc">Name: Z → A</option>
+        </select>
+      </div>
+
+      <div class="filter-buttons">
+        <button id="applyFilters" class="btn-contact">Apply</button>
+        <button id="resetFilters" class="btn-secondary">Reset</button>
+      </div>
+    </div>
+
+    <div class="results-count" id="resultsCount">Showing 0 colleges.</div>
+    <div class="fee-note">Fees are indicative; may change each admission year. Contact us for latest official figures.</div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="college-results" id="college-list">
+    <div id="collegesGrid" class="colleges-grid">
+      <!-- cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="college-cta">
+    <h2>Need Help Choosing the Right Medical College?</h2>
+    <p>Our counsellors guide you through state quotas, NRI seats, documentation, and admission deadlines.</p>
+    <a href="contact.html" class="btn-contact">Get Counselling Support</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Edu India Foundation. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- SCRIPTS -->
+  <script src="script.js" defer></script>
+  <script src="colleges.js" defer></script>
+  <script>
+    // Smooth scroll to college cards on Apply button click
+    document.getElementById('applyFilters').addEventListener('click', function () {
+      const target = document.getElementById('college-list');
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
